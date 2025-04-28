@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KeunggulanController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +14,15 @@ use App\Http\Controllers\KeunggulanController;
 |
 */
 
+// Route untuk Halaman Utama dan Beranda
 Route::get('/', [KeunggulanController::class, 'index']);
+Route::get('/beranda', [KeunggulanController::class, 'index']);
+
+// Route halaman lainnya
+Route::get('/kontak', function () {
+    return view('kontak');
+});
+
+Route::get('/tentang', function () {
+    return view('tentang');
+});
