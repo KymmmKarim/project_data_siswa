@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KeunggulanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,15 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/beranda', function () {
-    return view('beranda');
-});
+// Route untuk Halaman Utama dan Beranda
+Route::get('/', [KeunggulanController::class, 'index']);
+Route::get('/beranda', [KeunggulanController::class, 'index']);
+
+// Route halaman lainnya
 Route::get('/kontak', function () {
     return view('kontak');
 });
+
 Route::get('/tentang', function () {
     return view('tentang');
 });

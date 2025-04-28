@@ -1,3 +1,4 @@
+<!-- resources/views/beranda.blade.php -->
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
@@ -29,7 +30,7 @@
       <!-- Slide 1 -->
       <div class="swiper-slide flex items-center justify-center bg-gradient-to-r from-purple-500 to-blue-500 text-white text-center px-6">
         <div>
-          <h2 class="text-4xl md:text-5xl font-extrabold mb-4"> Kelola Data Siswa Lebih Cepat</h2>
+          <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Kelola Data Siswa Lebih Cepat</h2>
           <h2 class="text-3xl md:text-3xl font-extrabold mb-3">Input, edit, dan pantau informasi siswa dalam hitungan detik.</h2>
           <h2 class="text-8xl md:text-8xl font-extrabold mb-8">📊</h2>
         </div>
@@ -47,14 +48,14 @@
       <!-- Slide 3 -->
       <div class="swiper-slide flex items-center justify-center bg-gradient-to-r from-indigo-500 to-cyan-500 text-white text-center px-6">
         <div>
-          <h2 class="text-4xl md:text-5xl font-extrabold mb-4"> Mudah Digunakan oleh Siapa Saja</h2>
+          <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Mudah Digunakan oleh Siapa Saja</h2>
           <h2 class="text-3xl md:text-3xl font-extrabold mb-3">Antarmuka simpel dan intuitif, cocok untuk semua pengguna.</h2>
           <h2 class="text-8xl md:text-8xl font-extrabold mb-8">🚀</h2>
         </div>
       </div>
     </div>
 
-    <!-- Navigasi,Pagination -->
+    <!-- Navigasi dan Pagination -->
     <div class="swiper-button-next text-white"></div>
     <div class="swiper-button-prev text-white"></div>
     <div class="swiper-pagination"></div>
@@ -66,18 +67,12 @@
       <h3 class="text-3xl font-bold text-gray-800 mb-4">Kenapa Memilih Kami?</h3>
       <p class="text-gray-600 text-lg mb-8">Aplikasi kami dirancang untuk memudahkan pengelolaan informasi siswa secara profesional dan efisien.</p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-        <div class="bg-blue-50 p-6 rounded-xl shadow">
-          <h4 class="text-xl font-semibold text-blue-700 mb-2">Mudah Digunakan</h4>
-          <p class="text-gray-600">Antarmuka sederhana dan intuitif memudahkan siapa saja untuk mengakses.</p>
-        </div>
-        <div class="bg-purple-50 p-6 rounded-xl shadow">
-          <h4 class="text-xl font-semibold text-purple-700 mb-2">Fitur Lengkap</h4>
-          <p class="text-gray-600">Kelola data siswa, peran pengguna, dan banyak lagi dalam satu platform.</p>
-        </div>
-        <div class="bg-blue-100 p-6 rounded-xl shadow">
-          <h4 class="text-xl font-semibold text-blue-800 mb-2">Aman & Terpercaya</h4>
-          <p class="text-gray-600">Data tersimpan dengan aman dan hanya bisa diakses oleh yang berwenang.</p>
-        </div>
+        @foreach ($keunggulan as $item)
+          <div class="p-6 rounded-xl shadow" style="background-color: {{ $item->warna }}">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">{{ $item->judul }}</h4>
+            <p class="text-gray-600">{{ $item->deskripsi }}</p>
+          </div>
+        @endforeach
       </div>
     </div>
   </section>
@@ -91,8 +86,8 @@
     </a>
   </section>
 
-  <!-- pelajari lebih banyak -->
-  <section id="pelajari lebih banyak" class="py-16 bg-white scroll-mt-24">
+  <!-- Hubungi Kami -->
+  <section id="kontak" class="py-16 bg-white scroll-mt-24">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h3 class="text-3xl font-bold text-gray-800 mb-4">Hubungi Kami</h3>
       <p class="text-gray-600 mb-6">Email: aplikasisiswa@example.com | Telp: +62 812-3456-7890</p>
