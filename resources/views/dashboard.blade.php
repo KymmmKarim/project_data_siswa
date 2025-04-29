@@ -70,42 +70,6 @@
     </div>
   </section>
 
-  <!-- Pantau Data Siswa -->
-  <section id="pantau-siswa" class="py-20 bg-gray-50">
-    <div class="container">
-      <h2 class="text-4xl font-semibold text-gray-900 mb-8">Pantau Data Siswa</h2>
-      
-      <!-- Tabel Data Siswa -->
-      <div class="overflow-x-auto bg-white rounded-xl shadow-lg">
-        <table class="min-w-full table-auto">
-          <thead>
-            <tr class="bg-gray-800 text-white">
-              <th class="py-4 px-6 text-left">Nama</th>
-              <th class="py-4 px-6 text-left">Email</th>
-              <th class="py-4 px-6 text-left">Kelas</th>
-              <th class="py-4 px-6 text-left">Jurusan</th>
-              <th class="py-4 px-6 text-center">Aksi</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Data Siswa (Contoh) -->
-            <tr class="border-b hover:bg-gray-100">
-              <td class="py-4 px-6">Siswa A</td>
-              <td class="py-4 px-6">siswaa@example.com</td>
-              <td class="py-4 px-6">12 RPL</td>
-              <td class="py-4 px-6">Rekayasa Perangkat Lunak</td>
-              <td class="py-4 px-6 text-center">
-                <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-200">Edit</button>
-                <button class="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition duration-200">Hapus</button>
-              </td>
-            </tr>
-            <!-- Tambahkan Data Siswa lainnya disini -->
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
   <footer class="bg-gray-900 text-white text-center py-8 mt-12">
     <p class="text-sm">&copy; 2025 Aplikasi Siswa. Semua hak dilindungi.</p>
