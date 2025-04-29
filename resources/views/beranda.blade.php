@@ -72,7 +72,7 @@
 
   <!-- Tentang -->
   <section id="tentang" class="py-20 bg-gray-900 scroll-mt-24">
-    < class="max-w-5xl mx-auto px-4 text-center">
+<div class="max-w-5xl mx-auto px-4 text-center">
 <h3 class="text-3xl font-bold text-white mb-4">Kenapa Memilih Kami?</h3>
 <p class="text-gray-300 text-lg mb-12">Aplikasi kami dirancang untuk memudahkan pengelolaan informasi siswa secara profesional dan efisien.</p>
 
