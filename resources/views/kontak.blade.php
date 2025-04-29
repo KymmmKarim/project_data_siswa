@@ -21,6 +21,9 @@
           <a href="beranda" class="hover:text-indigo-500 hover:underline transition">🏠 Halaman Utama</a>
         </nav>
       </div>
+      <nav class="space-x-6 text-gray-600 font-semibold text-sm">
+        <a href="beranda" class="hover:text-purple-500 hover:underline transition duration-200">🏠 Halaman Utama</a>
+      </nav>
     </div>
   </header>
 
