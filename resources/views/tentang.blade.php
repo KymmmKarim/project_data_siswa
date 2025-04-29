@@ -8,13 +8,15 @@
 </head>
 <body class="bg-gradient-to-r from-blue-100 to-purple-100 min-h-screen flex items-center justify-center">
   <div class="max-w-4xl bg-white rounded-3xl shadow-2xl p-10 m-6">
-    <div class="flex items-center mb-6">
+    <div class="flex items-center justify-between mb-6">
       <svg class="w-10 h-10 text-purple-600 mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20.5a8.5 8.5 0 100-17 8.5 8.5 0 000 17z" />
       </svg>
       <h1 class="text-4xl font-extrabold text-gray-800">Tentang Aplikasi</h1>
+      <nav class="space-x-8 text-gray-300 font-semibold">
+        <a href="beranda" class="hover:text-purple-500 transition">🏠 Halaman Utama</a>
+      </nav>
     </div>
-    
     <p class="text-lg text-gray-600 mb-4">
       Aplikasi ini dibuat untuk membantu pengelolaan data siswa secara efisien. Dirancang agar mudah digunakan oleh admin, guru, maupun siswa.
     </p>

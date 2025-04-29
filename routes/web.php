@@ -26,3 +26,15 @@ Route::get('/kontak', function () {
 Route::get('/tentang', function () {
     return view('tentang');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/pantau-siswa', function () {
+    return view('pantau-siswa');
+});
+
+Route::get('/sukses', function () {
+    return view('sukses');
+});

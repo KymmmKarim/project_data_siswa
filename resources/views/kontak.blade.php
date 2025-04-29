@@ -11,8 +11,15 @@
   <!-- Header -->
   <header class="bg-white shadow-md py-6">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-bold text-purple-700">Kontak Kami</h1>
-      <p class="text-gray-600">Kami senang mendengar dari Anda.</p>
+      <div class="flex items-center justify-between">
+        <div>
+          <h1 class="text-4xl font-bold text-purple-700">Kontak Kami</h1>
+          <p class="text-gray-600">Kami senang mendengar dari Anda.</p>
+        </div>
+        <nav class="space-x-8 text-gray-600 font-semibold">
+          <a href="beranda" class="hover:text-purple-500 hover:underline transition">🏠 Halaman Utama</a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -56,7 +63,7 @@
           <h3 class="text-lg font-medium text-gray-800 mb-2">🔗 Sosial Media</h3>
           <div class="flex space-x-4">
             <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-xl text-sm">Facebook</a>
-            <a href="#" class="bg-sky-400 hover:bg-sky-500 text-white px-3 py-1 rounded-xl text-sm">Twitter</a>
+            <a href="#" class="bg-red-400 hover:bg-red-500 text-white px-3 py-1 rounded-xl text-sm">Youtube</a>
             <a href="#" class="bg-pink-500 hover:bg-pink-600 text-white px-3 py-1 rounded-xl text-sm">Instagram</a>
           </div>
         </div>
