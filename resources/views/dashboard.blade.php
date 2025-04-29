@@ -69,7 +69,7 @@
       </div>
     </div>
   </section>
-
+  
   <!-- Footer -->
   <footer class="bg-gray-900 text-white text-center py-8 mt-12">
     <p class="text-sm">&copy; 2025 Aplikasi Siswa. Semua hak dilindungi.</p>
