@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KeunggulanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route untuk Halaman Utama dan Beranda
+Route::get('/', [KeunggulanController::class, 'index']);
+Route::get('/beranda', [KeunggulanController::class, 'index']);
+
+// Route halaman lainnya
+Route::get('/kontak', function () {
+    return view('kontak');
+});
+
+Route::get('/tentang', function () {
+    return view('tentang');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/pantau-siswa', function () {
+    return view('pantau-siswa');
+});
+
+Route::get('/sukses', function () {
+    return view('sukses');
 });
